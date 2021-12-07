@@ -15,4 +15,4 @@ def sum(n):
        res += i ** 2
     return res
 
-print(sum(10))
+print(sum(10)) # result
