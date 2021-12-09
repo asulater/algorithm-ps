@@ -1,3 +1,5 @@
+# 3) Find the same name among people and make it into a set and return
+
 def find_same_name(a):
     n = len(a)
     res = set()
