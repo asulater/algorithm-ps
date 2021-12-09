@@ -1,7 +1,13 @@
-# 3) Find the same name among people and make it into a set and return
+def find_same_name(a):
+    n = len(a)
+    res = set()
+    for i in range(0, n-1):
+        for j in range(i + 1, n):
+            if a[i] == a[j]:
+                res.add(a[i])
+    return res
 
-s = set()
 
-s.add(1)
-s.add(2)
-print(s, type(s))
+name = ["Tom", "Jerry", "Mike", "Tom"]
+
+print(find_same_name(name))
