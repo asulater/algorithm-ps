@@ -18,3 +18,9 @@
 
 # 3-1) Pick two out of n and mate. Print out all the combinations you can pair up with
 
+def name_mate(a):
+    n = len(a) # n = 3
+    
+
+
+name = ["Tom", "Jerry", "Mike"]
