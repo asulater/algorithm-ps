@@ -13,12 +13,21 @@ print(fact(5))
 
 # 4-1) recursive call
 
-def hello(): # Calling functions infinitely
-    print("Hello") 
-    hello()
+# def hello(): # Calling functions infinitely
+#     print("Hello") 
+#     hello()
 
-hello()
+# hello()
 
 
 
 # 4-2) recursive factorial 
+# 1! = 1  //  2! = 2 x 1 = 2 x 1!  //  3! = 3 x (2 x 1) = 3 x 2!
+
+def re_fact(n):
+    if n <= 1:  # Termination conditions
+        return 1
+    return n * re_fact(n - 1)
+
+print(re_fact(2))
+print(re_fact(5))
