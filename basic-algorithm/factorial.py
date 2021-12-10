@@ -36,11 +36,25 @@ print(re_fact(5))
 # 4-3) Find the sum from 1 to n (use recursive call)
 
 def re_sum(n):
-    if n <= 1:
-        return 1
+    if n == 0:
+        return 0
     return n + re_sum(n - 1)
 
 print(re_sum(100))
 
 
 # 4-4) Find the maximum value of the list (use recursive call)
+
+v = [17, 92, 18, 33, 58, 7, 33, 42] # List
+
+
+def re_max(a, n):
+    if n == 1:
+        return a[0]
+    max_n_1 = re_max(a, n - 1)
+    if max_n_1 > a[n - 1]:
+        return max_n_1
+    else:
+        return a[n - 1]
+
+print(re_max(v, len(v)))
