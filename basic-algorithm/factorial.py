@@ -33,7 +33,7 @@ print(re_fact(2))
 print(re_fact(5))
 
 
-# 4-3) Find the sum from 1 to n (Use recursive call)
+# 4-3) Find the sum from 1 to n (use recursive call)
 
 def re_sum(n):
     if n <= 1:
@@ -41,3 +41,6 @@ def re_sum(n):
     return n + re_sum(n - 1)
 
 print(re_sum(100))
+
+
+# 4-4) Find the maximum value of the list (use recursive call)
