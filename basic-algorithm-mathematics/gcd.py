@@ -21,3 +21,13 @@ def eu_gcd(a, b):
     return gcd(b, a % b)
 
 print(eu_gcd(60,24))
+
+
+
+
+# 5-2) fibonacci series (use recursive call)
+
+def re_fibo(n):
+    if n == 0:
+        return n
+    
