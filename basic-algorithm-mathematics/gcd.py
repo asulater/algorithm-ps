@@ -15,3 +15,7 @@ print(gcd(60, 24))
 
 # 5-1) Euclid algorithm
 
+def eu_gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
