@@ -28,6 +28,8 @@ print(eu_gcd(60,24))
 # 5-2) fibonacci series (use recursive call)
 
 def re_fibo(n):
-    if n == 0:
+    if n <= 1:
         return n
-    
+    return re_fibo(n - 1) + re_fibo(n - 2)
+
+print(re_fibo(7))
