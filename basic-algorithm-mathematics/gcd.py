@@ -19,3 +19,5 @@ def eu_gcd(a, b):
     if b == 0:
         return a
     return gcd(b, a % b)
+
+print(eu_gcd(60,24))
