@@ -16,3 +16,18 @@ def palindrome(s):
 print(palindrome("Wow"))
 print(palindrome("Madam, I'm Adam."))
 print(palindrome("Madam, I am Adam."))
+
+
+
+# 14-1) palindrome (not use queue, stack)
+
+
+def palindrome_s(s):
+    if s.isalpha():
+        while s:
+            for i in range(0, len(s) - 1):
+                if s[i] != s[-1]:
+                    return False
+        return True
+
+print(palindrome_s("Wow"))
