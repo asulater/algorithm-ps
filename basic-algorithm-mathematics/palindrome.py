@@ -23,11 +23,18 @@ print(palindrome("Madam, I am Adam."))
 
 
 def palindrome_s(s):
-    if s.isalpha():
-        while s:
-            for i in range(0, len(s) - 1):
-                if s[i] != s[-1]:
-                    return False
-        return True
+    i = 0
+    j = len(s) - 1
+    while i < j:
+        if s[i].isalpha() == False:
+            i += 1
+        elif s[j].isalpha() == False:
+            j -= 1
+        elif s[i].lower() != s[j].lower():
+            return False
+        else:
+            i += 1
+            j -= 1
+    return True
 
 print(palindrome_s("Wow"))
