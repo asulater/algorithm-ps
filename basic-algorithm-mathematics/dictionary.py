@@ -14,3 +14,11 @@ def find_same_name(a):
                 result.add(name)
 
     return result
+
+name = ["Tom", "Jerry", "Mike", "Tom"]
+
+print(find_same_name(name))
+
+name2 = ["Tom", "Jerry", "Mike", "Tom", "Mike"]
+
+print(find_same_name(name2))
